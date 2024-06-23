@@ -7,12 +7,32 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    container: {
+      center: true,
+      padding: '15px',
+    },
+    screens: {
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1240px',
+    },
+    fontFamily: {
+      poppins: 'var(--font-poppins)',
+    },
+    backgroundImage: {
+      hero: 'url(assets/img/banner.jpg)',
+    },
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
+      colors: {
+        primary: {
+          DEFAULT: '#333333',
+          100: '#484848',
+          200: '#121212',
+          300: '#111111',
+        },
+        accent: '#EFC40F',
+      }
     },
   },
   plugins: [],
