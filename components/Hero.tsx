@@ -9,7 +9,7 @@ const Hero = () => {
 
   return (
     <section id="home" className="h-[100vh] md:h-[90vh] lg:h-[90vh] xl:h-[90vh] bg-[#121212] bg-cover bg-center">
-      <div className='w-[90%] xl:w-[80%] grid-cols-1 mx-auto grid lg:grid-cols-2 gap-[3rem] h-[100%] items-center'>
+      <div className='container mx-auto w-[90%] xl:w-[80%] grid-cols-1 mx-auto grid lg:grid-cols-2 gap-[3rem] h-[100%] items-center'>
         <div>
           <motion.h1
             variants={fadeIn('up', 0.2)}
